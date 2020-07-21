@@ -4,6 +4,17 @@ public class Greeting {
     private long id;
     private String content;
 
+    public Greeting() {
+    }
+
+    @Override
+    public String toString() {
+        return "Greeting{" +
+                "id=" + id +
+                ", content='" + content + '\'' +
+                '}';
+    }
+
     public long getId() {
         return id;
     }

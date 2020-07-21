@@ -1,15 +1,17 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Result Form</title>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 <body>
 <div>
     <h1>Result</h1>
-    <p th:text="'id: + ${greeting.id}"></p>
-    <p th:text="'content: + ${greeting.content}"></p>
-    <a href="/greeting">Submit another message</a>
+    <div>
+        <p th:text="'id: ' + ${greeting.id}"></p>
+        <p th:text="'content: ' + ${greeting.content}"></p>
+        <a href="/greeting">Submit another message</a>
+    </div>
 </div>
 </body>
 </html>
